@@ -77,7 +77,7 @@ async def get_location(message: types.Message, state: FSMContext):
     number = data.get("number")
     map_url = data.get("location")
 
-    await message.answer_photo(photo=photo,caption=f"F.I.SH {name}\nYoshingiz: {age}\nTelefon raqmingiz: +{number}\nManzilingiz: {map_url}\n", reply_markup=photo_btn)
+    await message.answer_photo(photo=photo,caption=f"F.I.SH {name}\nYoshingiz: {age}\nTelefon raqmingiz: +{number}\nManzilingiz: {map_url}\n")
     await bot.send_photo(photo=photo,chat_id="1016399078", caption=f"F.I.SH {name}\nYoshingiz: {age}\nTelefon raqmingiz: +{number}\nManzilingiz: {map_url}\n")
     await state.finish()
 
